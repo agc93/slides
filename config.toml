@@ -1,0 +1,4 @@
+baseURL = "https://slides.agchapman.com/"
+languageCode = "en-us"
+title = "Alistair Chapman"
+theme = "dimension"

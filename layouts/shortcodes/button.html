@@ -1,0 +1,6 @@
+<ul class="actions">
+{{ with .Get "video"}}
+<li><a class="button special" style="background-color: #5F0000;" data-href="{{ . }}" href="{{ . }}">Watch</a></li>
+{{ end }}
+<li><a class="button special" data-href="{{ .Get "link"}}" href="{{ .Get "link" }}">View</a></li>
+</ul>
