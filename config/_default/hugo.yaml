@@ -1,0 +1,5 @@
+baseURL: https://slides.agc93.au/
+languageCode: en-au
+title: Slides by Alistair Chapman
+pagination:
+  pagerSize: 5

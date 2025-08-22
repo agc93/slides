@@ -1,0 +1,24 @@
+/* @import "_button"; */
+@import "_link-button";
+
+$border-radius: 8px;
+
+a.markdown-btn {
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--accent-color-darker);
+    background-color: var(--accent-color-text);
+    border-radius: $border-radius;
+    text-align: center;
+    padding: 5px 1em 5px 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        text-decoration: none;
+        background-color: var(--accent-color-darker);
+        color: var(--accent-color-text);
+    }
+}

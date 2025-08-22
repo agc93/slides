@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "DDD Sydney 2017"}' />
+		<title>DDD Sydney 2017</title>
+
+		<meta name="description" content="DDD Sydney 2017 (15 July 2017)">
+
+		<link rel="stylesheet" type="text/css" href="../lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-quicksand theme-color-asphalt-orange">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="ef82043d8974c396e4493bc2040d937b"><div class="sl-block" data-block-type="text" style="width: 581px; left: 80px; top: 97px; height: auto;" data-block-id="409ffff3a1a6840e6c53cbc5a16eafcc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2 style="text-align:left">Using Docker to supercharge .NET development on Linux</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f8ec5e9808203a38baae0f5acd8a91ae" style="height: auto; min-width: 30px; min-height: 30px; width: 326px; left: 570px; top: 560px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Alistair Chapman</p>
+
+<p>@agc93</p>
+</div></div></section><section data-id="b1bdc1940fbb5d47dfe3909f29465e23"><div class="sl-block" data-block-type="text" style="width: 581px; left: 230px; top: 140px; height: auto;" data-block-id="12c0e094a2a50d038a79ccdad395b7b7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1 style="text-align:left">Docker</h1>
+
+<h1 style="text-align:left">+ .NET Core</h1>
+
+<h1 style="text-align:left">+ Linux</h1>
+
+<h1 style="text-align:left">= 🎉</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 115px; left: 23px; top: 140px;" data-block-id="c34545c529fc74559dd5ec841f5fd7ef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1>🐋</h1>
+
+<h1>🤖</h1>
+
+<h1>🐧</h1>
+
+<h1> </h1>
+</div></div></section><section data-id="0914be03e9cc1d812bef3d84ebec4d04"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 103px; height: auto;" data-block-id="e47376606373117ab8d23231bc373817"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>AGENDA</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 480px; left: 0px; top: 272px; height: auto;" data-block-id="b3a0709ea242af2435feca8a46a36064"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>Introduction</li>
+	<li>Building with Docker</li>
+	<li>Building for Docker</li>
+	<li>Being a magpie developer 101</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="7c3b5864b7cc3b4b4fc582ef1711dfc2" style="min-width: 30px; min-height: 30px; width: 355px; height: 466px; left: 531px; top: 194px;"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="0"><img style="" data-natural-width="1029" data-natural-height="1350" data-lazy-loaded="" data-src="../shared/0fefe22456d6abbe9eb4ebadfbfe4623.avif"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="a4bdb0b4208f54e0a7016f0abd74c735" style="height: auto; min-width: 30px; min-height: 30px; width: 355px; left: 531px; top: 661px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
+<p><span style="font-size:0.7em"><em>Thanks @thepracticaldev!</em></span></p>
+</div></div></section><section data-id="cce62cccee4fae7b281e91a6616c054a"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 140px; height: auto;" data-block-id="36faab67c2418a9197af5fc6f997d282"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="font-size:1.4em">Introduction</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="9c64815d5c4fa59c81f0aafbd6b8987a" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 269px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:1.4em">Alistair Chapman</span></p>
+
+<p> </p>
+
+<p><span style="font-size:1.2em">agc93</span></p>
+
+<p> </p>
+
+<p><span style="font-size:1.2em">agc93</span></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="3d00a1b4bd3b037197cc2c77b373600a" style="min-width: 4px; min-height: 4px; width: 47px; height: 47px; left: 343px; top: 377px;"><div class="sl-block-content" data-shape-type="symbol-twitter" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 3 32 26"><g class="shape-element" fill="#000000"><path d="M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a3317897c09d51d43b0cb72cb2772f8f" style="min-width: 30px; min-height: 30px; width: 57px; height: 57px; left: 343px; top: 476px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="64" data-natural-height="64" style="" data-lazy-loaded="" data-src="dddsyd17/74f6b355ddde94e814487f703204ae2c.avif"></div></div></section><section data-id="4e4d1229ca96c171b274a8ad0924d377"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 70px; height: auto;" data-block-id="904f80d41e0398a2affea3146a1b3100"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>A Note on Moving Targets</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="7c6f0acfa08cfec10bb2c529cc28e0e0" style="min-width: 30px; min-height: 30px; width: 360px; height: 130px; left: 40px; top: 250px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="488" data-natural-height="176" data-lazy-loaded="" data-src="dddsyd17/4c63ab2ab4a3bd5db5d53983d09d922d.avif"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="f02ac0197c164f929366d4ea64ac59d2" style="min-width: 30px; min-height: 30px; width: 448px; height: 152px; left: 472px; top: 239px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="792" data-natural-height="269" data-lazy-loaded="" data-src="dddsyd17/562d7ca5b3ff087c09b6022c535d5277.avif"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="bb3f5df0c9dd471de9141e95ffcd6571" style="min-width: 30px; min-height: 30px; width: 300px; height: 300px; left: 330px; top: 400px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="4500" data-natural-height="4500" data-lazy-loaded="" data-src="dddsyd17/f28315d87ab4dcfc04890d5219d3739a.avif"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="eb3dd134d776e82a8041d606f03dbc8d" style="height: auto; min-width: 30px; min-height: 30px; width: 133px; left: 220px; top: 490px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 200%;">
+<p>1.1</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 346px; left: 614px; top: 490px;" data-block-id="8e4f2989b3bf33ea674018f0750f9cf9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 200%;">
+<p>2.0 Preview</p>
+</div></div></section><section data-id="e0f1b7162518f9b53baf95a8ce97bc15"><div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 105px; height: auto;" data-block-id="769017ab95a03e1fd1b4e8cb79cdc86d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>Docker</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 210px; height: auto;" data-block-id="ccfb47be531d1a9ff506952e967aa72c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li>Process and environment isolation</li>
+	<li>Supported on Linux, Windows (mostly) and macOS (sort of)</li>
+	<li>Currently undergoing a minor identity crisis</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 528px; top: 105px; height: auto;" data-block-id="3f508d75bd17dc30d18cdf2153de0828"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 12;">
+<h2>.NET Core</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 384px; left: 528px; top: 210px; height: auto;" data-block-id="8081c6c89edefd9b09d2a067aa860d81"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 13;">
+<ul>
+	<li>The next generation of the .NET platform</li>
+	<li>Supported on Windows, macOS (mostly) and Linux (sort of)</li>
+	<li>Currently undergoing a minor identity crisis</li>
+</ul>
+</div></div></section><section data-id="832b756d4be1ef1287024ddae3c8cbc4"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 238px; height: auto;" data-block-id="383718f57bf0fa030dc94fd9dff889f4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>.NET Core on Linux</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 335px; height: auto;" data-block-id="6cb1d2311a85ee0e989ab3d46e9c1649"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<h3>The bare essentials</h3>
+</div></div></section><section data-id="cd864413d0c42a646744e95031bbbd4e"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 70px; height: auto;" data-block-id="ef305a243aaca1c855b0ad3a87920999"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Adding Docker to the Mix</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 563px; left: 199px; top: 210px; height: auto;" data-block-id="07cffdcb395596c7e2b1cb43d5463083"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>Use a Dockerfile to build an <strong>image</strong>
+</li>
+	<li>You can then <strong>run</strong> your image to run your app in a container</li>
+	<li>Your <strong>base image</strong> decides the environment</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="2596c856c83b46e96b786c64e6ddda75" style="min-width: 30px; min-height: 30px; width: 640px; height: 268px; left: 160px; top: 432px;"><div class="sl-block-content" style="z-index: 13;" data-highlight-theme="monokai"><pre class="none"><code>FROM microsoft/dotnet:1.1.2-sdk
+
+COPY . /app
+
+WORKDIR /app
+
+RUN ["dotnet", "restore"]
+
+RUN ["dotnet", "build"]
+
+EXPOSE 5000/tcp
+
+CMD ["dotnet", "run", "--server.urls", "http://*:5000"]</code></pre></div></div></section><section data-id="8596f4c034b810162f986d57f1a9161c"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 140px; height: auto;" data-block-id="ee8171bfe215afd2089870bcee42ac1e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Adding Docker to the Mix</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="fb587aea326851c7fd312a54305963b8" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 331px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Dockerifying a basic .NET app</p>
+</div></div></section><section data-id="fe9c8a01acb48dd1065412111f71d29f"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 210px; height: auto;" data-block-id="128e17f258494fd1851d23ff87d22890"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Building with Docker</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 335px; height: auto;" data-block-id="f97dcdb4bb7ee8b04972a78fbb55a6f7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<h3>Using Containers for .NET Builds and tests</h3>
+</div></div></section><section data-id="3e58d42ec68fc41bb1d3f221a796c2cf"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 140px; height: auto;" data-block-id="10eec8b5734e3b66e56802ff368ae90a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Building With Docker</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 263px; height: auto;" data-block-id="14cd99c93b7588ded16329c59cc7bf78"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Docker containers provide:
+	<ul>
+		<li>Isolation</li>
+		<li>"Clean" environment</li>
+		<li>Deterministic builds</li>
+	</ul>
+	</li>
+	<li>Containers <strong>won't</strong> provide:
+	<ul>
+		<li>"Real-world" usage</li>
+		<li>Security for untrusted code*</li>
+		<li> Compatibility guarantees</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="8282d98d9a65e35b3b88f87acb85b05c"><div class="sl-block" data-block-type="text" style="width: 959px; left: 0px; top: 130px; height: auto;" data-block-id="e0e0b8a4361c708d76cb0d1c89f0451c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>Building FOR Docker</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 282px; height: auto;" data-block-id="996470570dfffbcce08d7db96f5bf489"><div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 12;" data-fragment-index="1">
+<h3>Doing What The Cool Kids Do</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 232px; height: auto;" data-block-id="31ff960a88c6119fe0cd4ecbef86d7b6"><div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 13;" data-fragment-index="0">
+<h3>Building Cloud-Native Apps in Containers</h3>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="7ed7cc61e919e4209e56c83dd7d0513a" style="min-width: 30px; min-height: 30px; width: 267px; height: 350px; left: 613px; top: 350px;"><div class="sl-block-content fragment" style="z-index: 14;" data-fragment-index="3"><img style="" data-natural-width="1028" data-natural-height="1350" data-lazy-loaded="" data-src="dddsyd17/923fb225c15e8bc9634b9c05a4b1e990.avif"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="31d938f38f126a28eab10b8a240524f5" style="min-width: 30px; min-height: 30px; width: 267px; height: 350px; left: 80px; top: 350px;"><div class="sl-block-content fragment" style="z-index: 15;" data-fragment-index="2"><img style="" data-natural-width="400" data-natural-height="524" data-lazy-loaded="" data-src="dddsyd17/ecb39949c967f88ff23e923ff4b08475.avif"></div></div></section><section data-id="81c4995c381c12ff4b5e3aba2164a28c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 140px; height: auto;" data-block-id="ea6c4a4a3d56a7013b899d6bb0a15d5e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Building FOR Docker</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 263px; height: auto;" data-block-id="4fcd90a7ceaef0cf32486a350500136a"><div class="sl-block-content fragment current-visible" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui" data-fragment-index="0">
+<ul>
+	<li>Requires a new approach to architecture
+	<ul>
+		<li>Loose coupling</li>
+		<li>Isolation and autonomy</li>
+		<li>Stateless</li>
+		<li>Discovery and composability</li>
+	</ul>
+	</li>
+	<li>Best gains from apps designed as "cloud-native"</li>
+	<li>Extremely well-suited to microservices</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="b706a847a1da2a96d4bdf9ebce95abd5" style="min-width: 30px; min-height: 30px; width: 368px; height: 483px; left: 296px; top: 210px;"><div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1"><img style="" data-natural-width="1028" data-natural-height="1350" data-lazy-loaded="" data-src="../shared/e920256a20ea13ad084021e9415eb03b.avif"></div></div></section><section data-id="bbaaa687f3ccc3f252bba1a395244dac"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 15px; height: auto;" data-block-id="647cd90c3fbd6f56e0f43e95c826f112"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Building FOR Docker</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="image" data-block-id="06ef37aa54253947d6254caffc80deba" style="min-width: 30px; min-height: 30px; width: 435px; height: 571px; left: 263px; top: 120px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1028" data-natural-height="1350" data-lazy-loaded="" data-src="../shared/7061db6419c307cee3b6dc5b7bc8b24a.avif"></div></div></section><section data-id="afc2b14692b7c051d4f650a271502b55"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 15px; height: auto;" data-block-id="768b3bbcb43402a993da66f09610fdac"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Building FOR Docker</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 435px; height: 571px; left: 263px; top: 120px;" data-block-id="b981e8341a5d9126fa1b1656a2e6a15b"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1028" data-natural-height="1350" data-lazy-loaded="" data-src="../shared/b0828e682e37ac8ac8daf546ecc6e2de.avif"></div></div></section><section data-id="9c8175290888c73cb838e3fa914f50a4"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 155px; height: auto;" data-block-id="f49f0649fde5c09a3af4aa79382c9d1a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Where to next?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 263px; height: auto;" data-block-id="e54154ae2c694e23e6124460a282a0ba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Try it out for yourself</li>
+	<li>Check out Windows Containers</li>
+	<li>Develop further with schedulers</li>
+	<li>Host on your platform of choice</li>
+</ul>
+</div></div></section><section data-id="de6b11d91e04286de4405a031ce87c8b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="228c8cabda0c4d456581af3fd7db3305"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Alistair Chapman</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 286px; height: auto;" data-block-id="2a79616e3b35f6b58e06f64b1b20df30"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<p><span style="font-size:1.6em">@agc93</span></p>
+
+<p><span style="font-size:0.7em"><span style="color:rgb(255, 255, 255)">(essentially everywhere)</span></span></p>
+
+<p> </p>
+
+<p>https://blog.agchapman.com/</p>
+
+<p>https://github.com/agc93/</p>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1041206,"slug":"dddsyd17","title":"DDD Sydney 2017","description":"DDD Sydney 2017 (15 July 2017)","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2017-07-13T03:44:00.249Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/99e4462350b2f82e508c13c96939c37d/thumb.jpg?1154498786","view_count":960,"user":{"id":721401,"username":"agc93","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/a63443c8e592b5bd29068e0b9f26945c?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"lite","team_id":null,"settings":{"id":571252,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"fade","theme_id":null,"theme_font":"quicksand","theme_color":"asphalt-orange","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":17,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1499917440251,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","notes":{"fe9c8a01acb48dd1065412111f71d29f":"DNVM demo here\nDemo 2","832b756d4be1ef1287024ddae3c8cbc4":"Start with `dotnet new`, `dotnet run`, a la osdc, if the audience needs it","8596f4c034b810162f986d57f1a9161c":"demo 1","3e58d42ec68fc41bb1d3f221a796c2cf":"Demo 3 first, cover the slides, then demo 4","81c4995c381c12ff4b5e3aba2164a28c":"Bring up obvious similarities between SOA and microservices","4e4d1229ca96c171b274a8ad0924d377":"Microsoft has published their own documentation and samples already, bad timing etc.","bbaaa687f3ccc3f252bba1a395244dac":"Hype demo after intro","afc2b14692b7c051d4f650a271502b55":"Finish hype demo","0914be03e9cc1d812bef3d84ebec4d04":"This is everything I'm covering today, and there's a lot to get through so this might be pretty rapid.\n\nYou guys want some demos?","cd864413d0c42a646744e95031bbbd4e":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = '../lib/fonts/';
+		</script>
+
+		<script src="../lib/reveal.js"></script>
+		<script src="../lib/reveal-plugins.js"></script>
+		<script src="../lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "fade",
+				backgroundTransition: "fade",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>

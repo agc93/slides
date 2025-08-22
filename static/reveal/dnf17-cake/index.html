@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "dnf17-cake"}' />
+		<title>dnf17-cake</title>
+
+
+		<link rel="stylesheet" type="text/css" href="../lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-news theme-color-beige-brown">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="fd233768f734f633e138ca0f2caad8be"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 238px; height: auto;" data-block-id="efc193a6fd3fdc60245a085876b4ef3e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Making builds a piece of</h1>
+
+<h1><strong>Cake</strong></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="df44af2a8ca86fd6317b05b480754710" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 591px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Alistair Chapman (@agc93)</p>
+</div></div></section><section data-id="d6883203e7c94053986ab04cccb49c49"><div class="sl-block" data-block-type="image" style="width: 476px; height: 476px; left: 242.5px; top: 42px;" data-block-id="5c945832df85c47ccf3952be926b15fa"><div class="sl-block-content fragment" style="z-index: 10;" data-fragment-index="0"><img data-natural-width="1000" data-natural-height="1000" style="" data-src="dnf17-cake/096cbeaec8f21453f10bcf86308e430f.avif"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 574px; height: auto;" data-block-id="8a6359a1fb653597c3f6652b36f43c90"><div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;" data-fragment-index="1">
+<h2>
+<strong>Cake</strong> (C# Make)</h2>
+</div></div></section><section data-id="22cc391a1f60f2b751bdabee09de3cc8"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 70px; height: auto;" data-block-id="4c545bb5ac70deb95808553d06cfd1f2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>What is Cake?</h2>
+
+<p> </p>
+
+<p><em>Cake is a cross-platform build automation system with a C# DSL to do things like compiling code, copying files/folders, running unit tests, compressing files and building NuGet packages.</em></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 391px; height: auto;" data-block-id="919e85cb345f64c556fd845d71e22ae3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Scripts are written in C# </li>
+	<li>Fully cross-platform</li>
+	<li>Built for every CI system, including your laptop</li>
+	<li>Support for dozens of tools out of the box</li>
+	<li>Now 150 community addins</li>
+</ul>
+</div></div></section><section data-id="77e64a7e089da42b4bfad65c2d79e0ed"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 0px; height: auto;" data-block-id="a82a5869813897603c11510803829035"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>What does a script look like?</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="849d201105afe012f33ba401e40faf48" style="min-width: 30px; min-height: 30px; width: 935px; height: 618px; left: 13px; top: 82px;"><div class="sl-block-content" style="z-index: 12; font-size: 97%;" data-highlight-theme="monokai"><pre class="cs"><code>///////////////////////////////////////////////////////////////////////////////
+// ARGUMENTS
+///////////////////////////////////////////////////////////////////////////////
+
+var target = Argument("target", "Default");
+
+///////////////////////////////////////////////////////////////////////////////
+// SETUP / TEARDOWN
+///////////////////////////////////////////////////////////////////////////////
+
+Setup(ctx =&gt;
+{
+	// Executed BEFORE the first task.
+	Information("Running tasks...");
+});
+
+Teardown(ctx =&gt;
+{
+	// Executed AFTER the last task.
+	Information("Finished running tasks.");
+});
+
+///////////////////////////////////////////////////////////////////////////////
+// TASKS
+///////////////////////////////////////////////////////////////////////////////
+
+Task("Default")
+.Does(() =&gt; {
+	Information("Hello Cake!");
+});
+
+RunTarget(target);</code></pre></div></div></section><section data-id="688aed28dd0b71579d40a3ef223e2878"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 0px; height: auto;" data-block-id="44d6d974d301f4cbfbfb59b1af81042d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>But what can I do?</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="b4e3ff32ffaf596e416a8b5b5545c1ac" style="min-width: 30px; min-height: 30px; width: 554px; height: 518px; left: 203px; top: 132px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="399" data-natural-height="373" style="" data-src="dnf17-cake/97e0a354e0304b51174e130f1f9bc73c.avif"></div></div></section><section data-id="a9d8b224c031b236964fd4add3632333"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="c32b44ee54b626a677c3bebb061afa2d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Getting Started</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 379px; height: auto;" data-block-id="bf0d5339f6c3b7c5120af2dc7df3b40d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<h2>http://cakebuild.net</h2>
+
+<h2>gitter.im/cake-build/cake</h2>
+
+<h2>github.com/cake-build/cake</h2>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1018439,"slug":"dnf17-cake","title":"dnf17-cake","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2017-06-03T23:21:04.386Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/1f1745d547be562aa9a9bcca3d4f0bcb/thumb.jpg?1394342355","view_count":711,"user":{"id":721401,"username":"agc93","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/a63443c8e592b5bd29068e0b9f26945c?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","account_type":"lite","team_id":null,"settings":{"id":571252,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"news","theme_color":"beige-brown","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":6,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1496694881275,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = '../lib/fonts/';
+		</script>
+
+		<script src="../lib/reveal.js"></script>
+		<script src="../lib/reveal-plugins.js"></script>
+		<script src="../lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>

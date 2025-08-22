@@ -1,0 +1,302 @@
+:root {
+    --link-btn-radius: 0.4rem;
+    --link-btn-font-weight: 600;
+
+    /* Increased ~20% */
+    --link-btn-padding-y: 0.8rem; /* was 0.5rem */
+    --link-btn-padding-x: 1.2rem; /* was 0.9rem */
+    --link-btn-font-size: 1.4rem; /* was 1rem */
+
+    --link-btn-transition:
+        color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease,
+        box-shadow 0.15s ease;
+    --link-btn-focus-ring: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Base */
+.link-btn {
+    display: inline-block;
+    font-weight: var(--link-btn-font-weight);
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: var(--link-btn-padding-y) var(--link-btn-padding-x);
+    font-size: var(--link-btn-font-size);
+    border-radius: var(--link-btn-radius);
+    transition: var(--link-btn-transition);
+}
+
+.link-btn:focus {
+    outline: 0;
+    box-shadow: var(--link-btn-focus-ring);
+}
+
+.link-btn.disabled,
+.link-btn[aria-disabled="true"],
+.link-btn:disabled {
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+/* Internal content + icon spacing */
+.link-btn__content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em; /* modern spacing; fallback via margins below */
+}
+
+.link-btn__icon {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    font-size: 1em; /* keep icon sized with text */
+    margin-right: 0.5em; /* fallback when gap unsupported */
+}
+
+.link-btn__icon--right {
+    margin-left: 0.5em; /* fallback when gap unsupported */
+    margin-right: 0; /* override left icon margin */
+}
+
+.link-btn--icon-right .link-btn__icon {
+    margin-right: 0; /* ensure no extra space before label */
+}
+
+/* Sizes */
+.link-btn-sm {
+    padding: 0.3rem 0.72rem; /* scaled down a bit from new base */
+    font-size: 0.95rem;
+    border-radius: 0.3rem;
+}
+
+.link-btn-lg {
+    padding: 1rem 1.5rem; /* scaled up from new base */
+    font-size: 2rem;
+    border-radius: 0.75rem;
+}
+
+.link-btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Variants */
+.link-btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.link-btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+.link-btn-primary:active {
+    background-color: #0a58ca;
+    border-color: #0a53be;
+}
+
+.link-btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.link-btn-secondary:hover {
+    background-color: #60686f;
+    border-color: #596168;
+}
+.link-btn-secondary:active {
+    background-color: #555d63;
+    border-color: #4e555b;
+}
+
+.link-btn-success {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+.link-btn-success:hover {
+    background-color: #157347;
+    border-color: #136740;
+}
+.link-btn-success:active {
+    background-color: #136740;
+    border-color: #115b3a;
+}
+
+.link-btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.link-btn-danger:hover {
+    background-color: #c12f3d;
+    border-color: #b32b37;
+}
+.link-btn-danger:active {
+    background-color: #b32b37;
+    border-color: #a22731;
+}
+
+.link-btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+.link-btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+.link-btn-warning:active {
+    background-color: #cc9a00;
+    border-color: #bf9000;
+}
+
+.link-btn-info {
+    color: #000;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+.link-btn-info:hover {
+    background-color: #0bb8db;
+    border-color: #0aaac9;
+}
+.link-btn-info:active {
+    background-color: #0aaac9;
+    border-color: #099bb7;
+}
+
+.link-btn-light {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.link-btn-light:hover {
+    background-color: #e9ecef;
+    border-color: #e9ecef;
+}
+.link-btn-light:active {
+    background-color: #dde1e4;
+    border-color: #d6dadd;
+}
+
+.link-btn-dark {
+    color: #fff;
+    background-color: #212529;
+    border-color: #212529;
+}
+.link-btn-dark:hover {
+    background-color: #1b1f22;
+    border-color: #171a1d;
+}
+.link-btn-dark:active {
+    background-color: #15181b;
+    border-color: #111417;
+}
+
+/* Outline variants */
+.link-btn-outline-primary {
+    color: #0d6efd;
+    background: transparent;
+    border-color: #0d6efd;
+}
+.link-btn-outline-primary:hover {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+.link-btn-outline-secondary {
+    color: #6c757d;
+    background: transparent;
+    border-color: #6c757d;
+}
+.link-btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.link-btn-outline-success {
+    color: #198754;
+    background: transparent;
+    border-color: #198754;
+}
+.link-btn-outline-success:hover {
+    color: #fff;
+    background-color: #198754;
+}
+
+.link-btn-outline-danger {
+    color: #dc3545;
+    background: transparent;
+    border-color: #dc3545;
+}
+.link-btn-outline-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.link-btn-outline-warning {
+    color: #946200;
+    background: transparent;
+    border-color: #ffc107;
+}
+.link-btn-outline-warning:hover {
+    color: #212529;
+    background-color: #ffc107;
+}
+
+.link-btn-outline-info {
+    color: #0aa2c0;
+    background: transparent;
+    border-color: #0dcaf0;
+}
+.link-btn-outline-info:hover {
+    color: #000;
+    background-color: #0dcaf0;
+}
+
+.link-btn-outline-light {
+    color: #6c757d;
+    background: transparent;
+    border-color: #f8f9fa;
+}
+.link-btn-outline-light:hover {
+    color: #000;
+    background-color: #f8f9fa;
+}
+
+.link-btn-outline-dark {
+    color: #212529;
+    background: transparent;
+    border-color: #212529;
+}
+.link-btn-outline-dark:hover {
+    color: #fff;
+    background-color: #212529;
+}
+
+/* Optional link-style button */
+.link-btn-link {
+    color: #0d6efd;
+    background: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+}
+.link-btn-link:hover {
+    color: #0a58ca;
+}
+
+/* Spacing between adjacent buttons */
+.link-btn + .link-btn {
+  margin-inline-start: 0.5rem; /* left in LTR, right in RTL */
+}
+
+/* Optional: vertical spacing when using block buttons */
+.link-btn-block + .link-btn-block {
+  margin-block-start: 0.5rem;
+}

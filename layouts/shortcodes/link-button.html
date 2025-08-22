@@ -1,0 +1,54 @@
+{{- $href := .Get "href" | default "#" -}}
+{{- $textParam := .Get "text" -}}
+{{- $text := cond (ne $textParam "") $textParam (.Inner | default "" | markdownify | plainify) -}}
+{{- if eq $text "" }}{{- $text = "Button" -}}{{- end -}}
+
+{{- $variant := .Get "variant" | default "primary" -}} {{/* primary, secondary, success, danger, warning, info, light, dark, link or outline-<variant> */}}
+{{- $outlineFlag := eq (lower (.Get "outline" | default "false")) "true" -}}
+{{- $outline := or $outlineFlag (hasPrefix $variant "outline-") -}}
+{{- if hasPrefix $variant "outline-" -}}
+  {{- $variant = replace $variant "outline-" "" -}}
+{{- end -}}
+
+{{- $size := .Get "size" | default "" -}} {{/* sm, lg */}}
+{{- $block := eq (lower (.Get "block" | default "false")) "true" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $target := .Get "target" -}}
+{{- $rel := .Get "rel" -}}
+{{- $title := .Get "title" -}}
+{{- $ariaLabel := .Get "aria-label" -}}
+{{- $disabled := eq (lower (.Get "disabled" | default "false")) "true" -}}
+
+{{- /* Icon support */ -}}
+{{- $icon := .Get "icon" | default "" -}}           {{/* e.g., "bi bi-plus" or "fa-solid fa-download" */}}
+{{- $iconpos := (lower (.Get "iconpos" | default "left")) -}}  {{/* left or right */}}
+
+{{- $classes := slice "link-btn" -}}
+{{- if $outline -}}
+  {{- $classes = $classes | append (printf "link-btn-outline-%s" $variant) -}}
+{{- else -}}
+  {{- $classes = $classes | append (printf "link-btn-%s" $variant) -}}
+{{- end -}}
+{{- if in (slice "sm" "lg") $size }}{{- $classes = $classes | append (printf "link-btn-%s" $size) -}}{{- end -}}
+{{- if $block }}{{- $classes = $classes | append "link-btn-block" -}}{{- end -}}
+{{- if $disabled }}{{- $classes = $classes | append "disabled" -}}{{- end -}}
+{{- if $icon }}{{- $classes = $classes | append (printf "link-btn--icon-%s" $iconpos) -}}{{- end -}}
+{{- if $class }}{{- $classes = $classes | append $class -}}{{- end -}}
+
+<a class="{{ delimit $classes " " }}"
+   href="{{ $href }}"
+   {{ with $title }}title="{{ . }}"{{ end }}
+   {{ with $ariaLabel }}aria-label="{{ . }}"{{ end }}
+   {{ if $disabled }}aria-disabled="true" tabindex="-1"{{ end }}
+   {{ with $target }}target="{{ . }}"{{ end }}
+   {{ with $rel }}rel="{{ . }}"{{ end }}>
+  <span class="link-btn__content">
+    {{- if and $icon (ne $iconpos "right") -}}
+      <i class="link-btn__icon {{ $icon }}" aria-hidden="true"></i>
+    {{- end -}}
+    <span class="link-btn__label">{{ $text }}</span>
+    {{- if and $icon (eq $iconpos "right") -}}
+      <i class="link-btn__icon link-btn__icon--right {{ $icon }}" aria-hidden="true"></i>
+    {{- end -}}
+  </span>
+</a>
