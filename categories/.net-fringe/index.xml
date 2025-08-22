@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.NET Fringe on Slides by Alistair Chapman</title><link>https://slides.agc93.au/categories/.net-fringe/</link><description>Recent content in .NET Fringe on Slides by Alistair Chapman</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Sat, 02 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://slides.agc93.au/categories/.net-fringe/index.xml" rel="self" type="application/rss+xml"/><item><title>.NET Fringe 2017 (Docker and .NET on Linux)</title><link>https://slides.agc93.au/p/dotnetfringe-2017/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/dotnetfringe-2017/</guid><description>&lt;blockquote>
+&lt;p>With the release of .NET Core, the long-awaited dream of running .NET natively on Linux is finally here! Even better, .NET Core has arrived just in time for the coming container revolution!&lt;/p>&lt;/blockquote>
+&lt;p>In this talk I will be covering getting started with .NET Core on Linux, including a progressive approach to introducing Docker starting with CLI and tooling all the way up to a fully containerised application in a short, but practical development scenario.&lt;/p>
+&lt;p>In this session, we will get started with a basic Hello, World! in C# on a Linux host and demonstrate how Docker can be used not just in production, but also during development to not just simplify the Linux development experience, but also to enable powerful new capabilities including cross-platform scripting, seamless scaling, reproducible builds and simple testing.&lt;/p>
+&lt;p>This talk will be focussing almost exclusively on developing on Linux so is perfect for .NET developers new to the platform as well as Linux gurus who may not have gotten their hands dirty with .NET Core yet.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=wYZGdtYA_cM"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dotnetfringe17/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>.NET Fringe 2017 (Lightning Talk)</title><link>https://slides.agc93.au/p/dotnetfringe-lt-2017/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/dotnetfringe-lt-2017/</guid><description>&lt;blockquote>
+&lt;p>This session will be an lightning-quick dive into getting started with Cake (C# Make) to automate, orchestrate and supercharge your builds.&lt;/p>&lt;/blockquote>
+&lt;p>During the session I will be covering getting started with Cake, from putting together your first build script and understanding Cake’s basics, all the way through every step of the development lifecycle including build, test, packaging, publishing and deployment across any platform.&lt;/p>
+&lt;p>This session will include simple demos to go from a basic .NET solution to a complete cross-platform automated build solution using a single Cake script.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=uFzhZUDa-iQ"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dnf17-cake/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item></channel></rss>

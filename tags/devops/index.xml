@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Devops on Slides by Alistair Chapman</title><link>https://slides.agc93.au/tags/devops/</link><description>Recent content in Devops on Slides by Alistair Chapman</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Sat, 02 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://slides.agc93.au/tags/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>.NET Fringe 2017 (Lightning Talk)</title><link>https://slides.agc93.au/p/dotnetfringe-lt-2017/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/dotnetfringe-lt-2017/</guid><description>&lt;blockquote>
+&lt;p>This session will be an lightning-quick dive into getting started with Cake (C# Make) to automate, orchestrate and supercharge your builds.&lt;/p>&lt;/blockquote>
+&lt;p>During the session I will be covering getting started with Cake, from putting together your first build script and understanding Cake’s basics, all the way through every step of the development lifecycle including build, test, packaging, publishing and deployment across any platform.&lt;/p>
+&lt;p>This session will include simple demos to go from a basic .NET solution to a complete cross-platform automated build solution using a single Cake script.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=uFzhZUDa-iQ"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dnf17-cake/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>User Groups and Meetups</title><link>https://slides.agc93.au/p/user-groups-meetups/</link><pubDate>Thu, 29 Jun 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/user-groups-meetups/</guid><description>&lt;h1 id="devops-user-group-gothenburg-dough">&lt;a href="#devops-user-group-gothenburg-dough" class="header-anchor">&lt;/a>DevOps User Group Gothenburg (DOUGH)
+&lt;/h1>&lt;h3 id="devsecops-like-devops-without-the-annoyed-security-team-may-12-2020">&lt;a href="#devsecops-like-devops-without-the-annoyed-security-team-may-12-2020" class="header-anchor">&lt;/a>DevSecOps: like DevOps without the annoyed security team (May 12, 2020)
+&lt;/h3>&lt;p>Integrating security controls into DevOps has been the goal, and downfall, of many software teams. While the two pursuits often run counter to each other, there&amp;rsquo;s plenty of ways to use the tools, processes, and platforms your team is already using to improve the security of your products.&lt;/p>
+&lt;p>In this talk, we&amp;rsquo;ll be exploring ways you can integrate and improve security controls in your software at every stage of the DevOps lifecycle. In particular, we&amp;rsquo;ll be looking for all the ways you can use your existing tools and processes to improve the security of products and platforms without derailing your team&amp;rsquo;s delivery or giving your security ops team any more sleepless nights than necessary.&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/devsecops-dough/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;h1 id="devops-brisbane">&lt;a href="#devops-brisbane" class="header-anchor">&lt;/a>DevOps Brisbane
+&lt;/h1>&lt;h3 id="ci-playoff-29-june-2017">&lt;a href="#ci-playoff-29-june-2017" class="header-anchor">&lt;/a>CI Playoff (29 June, 2017)
+&lt;/h3>&lt;p>A short lightning talk covering some of the common CI tools in play (at the time)&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/ci-playoff/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;h1 id="brisbane-net-user-group">&lt;a href="#brisbane-net-user-group" class="header-anchor">&lt;/a>Brisbane .NET User Group
+&lt;/h1>&lt;h3 id="net-tour-down-under-making-linux-and-net-get-along-23-october-2019">&lt;a href="#net-tour-down-under-making-linux-and-net-get-along-23-october-2019" class="header-anchor">&lt;/a>.NET Tour Down Under: Making Linux and .NET get along (23 October, 2019)
+&lt;/h3>&lt;p>Presented as part of Microsoft&amp;rsquo;s .NET Tour Down Under program after NDC 2019, this talk covers developing .NET apps on, and for, Linux with the tools available in .NET Core.&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/netug19-tour/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;h3 id="net-for-hipsters-running-net-applications-in-containers">&lt;a href="#net-for-hipsters-running-net-applications-in-containers" class="header-anchor">&lt;/a>.NET for Hipsters: running .NET applications in containers
+&lt;/h3>&lt;p>A short presentation introducing the basics of container-based development and how to build and run .NET apps in containers&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/netug-containers/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a></description></item></channel></rss>

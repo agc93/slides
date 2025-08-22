@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Slides by Alistair Chapman</title><link>https://slides.agc93.au/post/</link><description>Recent content in Posts on Slides by Alistair Chapman</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://slides.agc93.au/post/index.xml" rel="self" type="application/rss+xml"/><item><title>linux.conf.au 2018 (.NET Core on Linux)</title><link>https://slides.agc93.au/p/lca-2018-dotnet/</link><pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/lca-2018-dotnet/</guid><description>&lt;blockquote>
+&lt;p>.NET Core is 3 major versions in and each new update has brought not only new features but also vastly improved Linux compatibility and support for more distributions. Has the promised age of truly cross-platform .NET and real Linux support finally come?&lt;/p>&lt;/blockquote>
+&lt;p>This talk will be drawing on years of experience working with .NET technologies on Linux platforms (including Mono), as well as working with the latest .NET Core stack. In this session, I will be covering a brief history of .NET on Linux bringing us to today’s new cross-platform stack, including how to get started with .NET Core on Linux platforms.&lt;/p>
+&lt;p>I’ll be looking at how you can integrate .NET apps and services into the Linux ecosystem, including simple deployment, testing and packaging strategies, as well as looking at how to integrate .NET with common Linux services including systemd, dbus and GTK. Finally, I will be showing how to build a complete pipeline to build, deliver and run .NET apps entirely on just about any Linux distribution you can think of.&lt;/p>
+&lt;p>This talk will start with the high-level essentials of working with .NET technologies on Linux while also covering the deeper technical details so is perfect for any level of .NET Core developer, whether they’re familiar with Linux or not.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=4kC-3It-bdw"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/lca18dd/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>linux.conf.au 2018 (Lightning Talk)</title><link>https://slides.agc93.au/p/lca-2018-lightning/</link><pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/lca-2018-lightning/</guid><description>&lt;blockquote>
+&lt;p>How not to Docker&lt;/p>&lt;/blockquote>
+&lt;p>A short lightning talk demonstrating common mistakes, errors, or deliberately terrible ideas for developers working with Docker&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://youtu.be/SBrkSyA-GG4?t=27m56s"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/lca18lt/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>linux.conf.au 2018 (Mastering Docker Orchestration)</title><link>https://slides.agc93.au/p/lca-2018-docker/</link><pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/lca-2018-docker/</guid><description>&lt;blockquote>
+&lt;p>The transition to containers may be easy enough for developers, but managing and running a fleet of hundreds or thousands of containers can be a daunting change. The “production cliff” of taking Docker from a small proof-of-concept to fully resilient production service is extremely high and often underestimated.&lt;/p>&lt;/blockquote>
+&lt;p>In this talk, I will be discussing the major pitfalls to be aware of when transitioning towards containers in production, simple best practices for running production workloads and how to orchestrate new container infrastructure along with existing virtualised or bare-metal infrastructure.&lt;/p>
+&lt;p>This won’t just be another “containers are the greatest talk” as I will cover the pitfalls, failings and downsides of running Docker-based container workloads of all types. In addition, we’ll be looking at how to test, migrate, run and monitor production services using orchestrators like Swarm, Kubernetes or OpenShift. Finally, I’ll show you how you can make use of public and hybrid cloud services to make running containerised services easier and get returns sooner.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=4pYpIv_FduQ"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/lca18sa/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>.NET Fringe 2017 (Docker and .NET on Linux)</title><link>https://slides.agc93.au/p/dotnetfringe-2017/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/dotnetfringe-2017/</guid><description>&lt;blockquote>
+&lt;p>With the release of .NET Core, the long-awaited dream of running .NET natively on Linux is finally here! Even better, .NET Core has arrived just in time for the coming container revolution!&lt;/p>&lt;/blockquote>
+&lt;p>In this talk I will be covering getting started with .NET Core on Linux, including a progressive approach to introducing Docker starting with CLI and tooling all the way up to a fully containerised application in a short, but practical development scenario.&lt;/p>
+&lt;p>In this session, we will get started with a basic Hello, World! in C# on a Linux host and demonstrate how Docker can be used not just in production, but also during development to not just simplify the Linux development experience, but also to enable powerful new capabilities including cross-platform scripting, seamless scaling, reproducible builds and simple testing.&lt;/p>
+&lt;p>This talk will be focussing almost exclusively on developing on Linux so is perfect for .NET developers new to the platform as well as Linux gurus who may not have gotten their hands dirty with .NET Core yet.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=wYZGdtYA_cM"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dotnetfringe17/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>.NET Fringe 2017 (Lightning Talk)</title><link>https://slides.agc93.au/p/dotnetfringe-lt-2017/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/dotnetfringe-lt-2017/</guid><description>&lt;blockquote>
+&lt;p>This session will be an lightning-quick dive into getting started with Cake (C# Make) to automate, orchestrate and supercharge your builds.&lt;/p>&lt;/blockquote>
+&lt;p>During the session I will be covering getting started with Cake, from putting together your first build script and understanding Cake’s basics, all the way through every step of the development lifecycle including build, test, packaging, publishing and deployment across any platform.&lt;/p>
+&lt;p>This session will include simple demos to go from a basic .NET solution to a complete cross-platform automated build solution using a single Cake script.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=uFzhZUDa-iQ"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dnf17-cake/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>DDD Brisbane 2017 (.NET Core on Linux)</title><link>https://slides.agc93.au/p/ddd-brisbane-2017/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/ddd-brisbane-2017/</guid><description>&lt;blockquote>
+&lt;p>.NET Core is 3 major versions in and each new update has brought not only new features but also
+vastly improved Linux compatibility and support for more distributions. Has the promised age of
+truly cross-platform .NET and real Linux support finally come?&lt;/p>&lt;/blockquote>
+&lt;p>This talk will be drawing on years of experience working with .NET technologies on Linux
+platforms (including Mono), as well as working with the latest .NET Core stack. In this session, I
+will be covering a brief history of .NET on Linux bringing us to today’s new cross-platform stack,
+including how to get started with .NET Core on Linux platforms.&lt;/p>
+&lt;p>I’ll be looking at how you can integrate .NET apps and services into the Linux ecosystem, including
+simple deployment, testing and packaging strategies, as well as looking at how to integrate .NET
+with common Linux services including systemd, dbus and GTK. Finally, I will be showing how to
+build a complete pipeline to build, deliver and run .NET apps entirely on just about any Linux
+distribution you can think of.&lt;/p>
+&lt;p>This talk will start with the high-level essentials of working with .NET technologies on Linux while
+also covering the deeper technical details so is perfect for any level of .NET Core developer,
+whether they’re familiar with Linux or not.&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dddbne17/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;!-- &lt;a class="link-btn link-btn-primary link-btn-lg"
+href="slides.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+--></description></item><item><title>DDD Sydney 2017 (Docker and .NET on Linux)</title><link>https://slides.agc93.au/p/ddd-sydney-2017/</link><pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/ddd-sydney-2017/</guid><description>&lt;blockquote>
+&lt;p>With the release of .NET Core, the long-awaited dream of running .NET natively on Linux is finally here! Even better, .NET Core has arrived just in time for the coming container revolution!&lt;/p>&lt;/blockquote>
+&lt;!-- &lt;a href="https://slides.agc93.au/reveal/dddsyd17/index.html" class="button button--primary button--large" >
+Slides
+&lt;/a>
+&lt;a href="slides.html" target="_blank" rel="noreferrer" class="markdown-btn">
+Local Slides
+&lt;/a>
+&lt;a href="https://slides.agc93.au/" class="markdown-btn">Get Home&lt;/a>
+-->
+&lt;!-- -->
+&lt;p>In this talk I will be covering getting started with .NET Core on Linux, including a progressive
+approach to introducing Docker starting with CLI and tooling all the way up to a fully containerised
+application in a short, but practical development scenario.&lt;/p>
+&lt;p>In this session, we will get started with a basic Hello, World! in C# on a Linux host and demonstrate
+how Docker can be used not just in production, but also during development to not just simplify the
+Linux development experience, but also to enable powerful new capabilities including cross-
+platform scripting, seamless scaling, reproducible builds and simple testing.&lt;/p>
+&lt;p>This talk will be focussing almost exclusively on developing on Linux so is perfect for .NET
+developers new to the platform as well as Linux gurus who may not have gotten their hands dirty
+with .NET Core yet.&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dddsyd17/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;!-- &lt;a class="link-btn link-btn-primary link-btn-lg"
+href="slides.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+-->
+&lt;!-- &lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://slides.agc93.au/reveal/dddsyd17/index.html"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+--></description></item><item><title>User Groups and Meetups</title><link>https://slides.agc93.au/p/user-groups-meetups/</link><pubDate>Thu, 29 Jun 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/user-groups-meetups/</guid><description>&lt;h1 id="devops-user-group-gothenburg-dough">&lt;a href="#devops-user-group-gothenburg-dough" class="header-anchor">&lt;/a>DevOps User Group Gothenburg (DOUGH)
+&lt;/h1>&lt;h3 id="devsecops-like-devops-without-the-annoyed-security-team-may-12-2020">&lt;a href="#devsecops-like-devops-without-the-annoyed-security-team-may-12-2020" class="header-anchor">&lt;/a>DevSecOps: like DevOps without the annoyed security team (May 12, 2020)
+&lt;/h3>&lt;p>Integrating security controls into DevOps has been the goal, and downfall, of many software teams. While the two pursuits often run counter to each other, there&amp;rsquo;s plenty of ways to use the tools, processes, and platforms your team is already using to improve the security of your products.&lt;/p>
+&lt;p>In this talk, we&amp;rsquo;ll be exploring ways you can integrate and improve security controls in your software at every stage of the DevOps lifecycle. In particular, we&amp;rsquo;ll be looking for all the ways you can use your existing tools and processes to improve the security of products and platforms without derailing your team&amp;rsquo;s delivery or giving your security ops team any more sleepless nights than necessary.&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/devsecops-dough/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;h1 id="devops-brisbane">&lt;a href="#devops-brisbane" class="header-anchor">&lt;/a>DevOps Brisbane
+&lt;/h1>&lt;h3 id="ci-playoff-29-june-2017">&lt;a href="#ci-playoff-29-june-2017" class="header-anchor">&lt;/a>CI Playoff (29 June, 2017)
+&lt;/h3>&lt;p>A short lightning talk covering some of the common CI tools in play (at the time)&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/ci-playoff/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;h1 id="brisbane-net-user-group">&lt;a href="#brisbane-net-user-group" class="header-anchor">&lt;/a>Brisbane .NET User Group
+&lt;/h1>&lt;h3 id="net-tour-down-under-making-linux-and-net-get-along-23-october-2019">&lt;a href="#net-tour-down-under-making-linux-and-net-get-along-23-october-2019" class="header-anchor">&lt;/a>.NET Tour Down Under: Making Linux and .NET get along (23 October, 2019)
+&lt;/h3>&lt;p>Presented as part of Microsoft&amp;rsquo;s .NET Tour Down Under program after NDC 2019, this talk covers developing .NET apps on, and for, Linux with the tools available in .NET Core.&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/netug19-tour/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;h3 id="net-for-hipsters-running-net-applications-in-containers">&lt;a href="#net-for-hipsters-running-net-applications-in-containers" class="header-anchor">&lt;/a>.NET for Hipsters: running .NET applications in containers
+&lt;/h3>&lt;p>A short presentation introducing the basics of container-based development and how to build and run .NET apps in containers&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/netug-containers/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a></description></item></channel></rss>

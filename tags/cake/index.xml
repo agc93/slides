@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cake on Slides by Alistair Chapman</title><link>https://slides.agc93.au/tags/cake/</link><description>Recent content in Cake on Slides by Alistair Chapman</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Sat, 02 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://slides.agc93.au/tags/cake/index.xml" rel="self" type="application/rss+xml"/><item><title>.NET Fringe 2017 (Lightning Talk)</title><link>https://slides.agc93.au/p/dotnetfringe-lt-2017/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/dotnetfringe-lt-2017/</guid><description>&lt;blockquote>
+&lt;p>This session will be an lightning-quick dive into getting started with Cake (C# Make) to automate, orchestrate and supercharge your builds.&lt;/p>&lt;/blockquote>
+&lt;p>During the session I will be covering getting started with Cake, from putting together your first build script and understanding Cake’s basics, all the way through every step of the development lifecycle including build, test, packaging, publishing and deployment across any platform.&lt;/p>
+&lt;p>This session will include simple demos to go from a basic .NET solution to a complete cross-platform automated build solution using a single Cake script.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=uFzhZUDa-iQ"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dnf17-cake/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item></channel></rss>

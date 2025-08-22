@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DDD on Slides by Alistair Chapman</title><link>https://slides.agc93.au/categories/ddd/</link><description>Recent content in DDD on Slides by Alistair Chapman</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Sat, 02 Dec 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://slides.agc93.au/categories/ddd/index.xml" rel="self" type="application/rss+xml"/><item><title>DDD Brisbane 2017 (.NET Core on Linux)</title><link>https://slides.agc93.au/p/ddd-brisbane-2017/</link><pubDate>Sat, 02 Dec 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/ddd-brisbane-2017/</guid><description>&lt;blockquote>
+&lt;p>.NET Core is 3 major versions in and each new update has brought not only new features but also
+vastly improved Linux compatibility and support for more distributions. Has the promised age of
+truly cross-platform .NET and real Linux support finally come?&lt;/p>&lt;/blockquote>
+&lt;p>This talk will be drawing on years of experience working with .NET technologies on Linux
+platforms (including Mono), as well as working with the latest .NET Core stack. In this session, I
+will be covering a brief history of .NET on Linux bringing us to today’s new cross-platform stack,
+including how to get started with .NET Core on Linux platforms.&lt;/p>
+&lt;p>I’ll be looking at how you can integrate .NET apps and services into the Linux ecosystem, including
+simple deployment, testing and packaging strategies, as well as looking at how to integrate .NET
+with common Linux services including systemd, dbus and GTK. Finally, I will be showing how to
+build a complete pipeline to build, deliver and run .NET apps entirely on just about any Linux
+distribution you can think of.&lt;/p>
+&lt;p>This talk will start with the high-level essentials of working with .NET technologies on Linux while
+also covering the deeper technical details so is perfect for any level of .NET Core developer,
+whether they’re familiar with Linux or not.&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dddbne17/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;!-- &lt;a class="link-btn link-btn-primary link-btn-lg"
+href="slides.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+--></description></item><item><title>DDD Sydney 2017 (Docker and .NET on Linux)</title><link>https://slides.agc93.au/p/ddd-sydney-2017/</link><pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/ddd-sydney-2017/</guid><description>&lt;blockquote>
+&lt;p>With the release of .NET Core, the long-awaited dream of running .NET natively on Linux is finally here! Even better, .NET Core has arrived just in time for the coming container revolution!&lt;/p>&lt;/blockquote>
+&lt;!-- &lt;a href="https://slides.agc93.au/reveal/dddsyd17/index.html" class="button button--primary button--large" >
+Slides
+&lt;/a>
+&lt;a href="slides.html" target="_blank" rel="noreferrer" class="markdown-btn">
+Local Slides
+&lt;/a>
+&lt;a href="https://slides.agc93.au/" class="markdown-btn">Get Home&lt;/a>
+-->
+&lt;!-- -->
+&lt;p>In this talk I will be covering getting started with .NET Core on Linux, including a progressive
+approach to introducing Docker starting with CLI and tooling all the way up to a fully containerised
+application in a short, but practical development scenario.&lt;/p>
+&lt;p>In this session, we will get started with a basic Hello, World! in C# on a Linux host and demonstrate
+how Docker can be used not just in production, but also during development to not just simplify the
+Linux development experience, but also to enable powerful new capabilities including cross-
+platform scripting, seamless scaling, reproducible builds and simple testing.&lt;/p>
+&lt;p>This talk will be focussing almost exclusively on developing on Linux so is perfect for .NET
+developers new to the platform as well as Linux gurus who may not have gotten their hands dirty
+with .NET Core yet.&lt;/p>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/dddsyd17/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;!-- &lt;a class="link-btn link-btn-primary link-btn-lg"
+href="slides.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+-->
+&lt;!-- &lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://slides.agc93.au/reveal/dddsyd17/index.html"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+--></description></item></channel></rss>

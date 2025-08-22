@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux.conf.au on Slides by Alistair Chapman</title><link>https://slides.agc93.au/categories/linux.conf.au/</link><description>Recent content in Linux.conf.au on Slides by Alistair Chapman</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Tue, 23 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://slides.agc93.au/categories/linux.conf.au/index.xml" rel="self" type="application/rss+xml"/><item><title>linux.conf.au 2018 (.NET Core on Linux)</title><link>https://slides.agc93.au/p/lca-2018-dotnet/</link><pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/lca-2018-dotnet/</guid><description>&lt;blockquote>
+&lt;p>.NET Core is 3 major versions in and each new update has brought not only new features but also vastly improved Linux compatibility and support for more distributions. Has the promised age of truly cross-platform .NET and real Linux support finally come?&lt;/p>&lt;/blockquote>
+&lt;p>This talk will be drawing on years of experience working with .NET technologies on Linux platforms (including Mono), as well as working with the latest .NET Core stack. In this session, I will be covering a brief history of .NET on Linux bringing us to today’s new cross-platform stack, including how to get started with .NET Core on Linux platforms.&lt;/p>
+&lt;p>I’ll be looking at how you can integrate .NET apps and services into the Linux ecosystem, including simple deployment, testing and packaging strategies, as well as looking at how to integrate .NET with common Linux services including systemd, dbus and GTK. Finally, I will be showing how to build a complete pipeline to build, deliver and run .NET apps entirely on just about any Linux distribution you can think of.&lt;/p>
+&lt;p>This talk will start with the high-level essentials of working with .NET technologies on Linux while also covering the deeper technical details so is perfect for any level of .NET Core developer, whether they’re familiar with Linux or not.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=4kC-3It-bdw"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/lca18dd/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>linux.conf.au 2018 (Lightning Talk)</title><link>https://slides.agc93.au/p/lca-2018-lightning/</link><pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/lca-2018-lightning/</guid><description>&lt;blockquote>
+&lt;p>How not to Docker&lt;/p>&lt;/blockquote>
+&lt;p>A short lightning talk demonstrating common mistakes, errors, or deliberately terrible ideas for developers working with Docker&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://youtu.be/SBrkSyA-GG4?t=27m56s"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/lca18lt/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item><item><title>linux.conf.au 2018 (Mastering Docker Orchestration)</title><link>https://slides.agc93.au/p/lca-2018-docker/</link><pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate><guid>https://slides.agc93.au/p/lca-2018-docker/</guid><description>&lt;blockquote>
+&lt;p>The transition to containers may be easy enough for developers, but managing and running a fleet of hundreds or thousands of containers can be a daunting change. The “production cliff” of taking Docker from a small proof-of-concept to fully resilient production service is extremely high and often underestimated.&lt;/p>&lt;/blockquote>
+&lt;p>In this talk, I will be discussing the major pitfalls to be aware of when transitioning towards containers in production, simple best practices for running production workloads and how to orchestrate new container infrastructure along with existing virtualised or bare-metal infrastructure.&lt;/p>
+&lt;p>This won’t just be another “containers are the greatest talk” as I will cover the pitfalls, failings and downsides of running Docker-based container workloads of all types. In addition, we’ll be looking at how to test, migrate, run and monitor production services using orchestrators like Swarm, Kubernetes or OpenShift. Finally, I’ll show you how you can make use of public and hybrid cloud services to make running containerised services easier and get returns sooner.&lt;/p>
+&lt;p>&lt;a class="link-btn link-btn-danger link-btn-lg"
+href="https://www.youtube.com/watch?v=4pYpIv_FduQ"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">Watch Recording&lt;/span>&lt;/span>
+&lt;/a>
+&lt;a class="link-btn link-btn-primary link-btn-lg"
+href="https://slides.agc93.au/reveal/lca18sa/index.html"
+target="_blank"
+>
+&lt;span class="link-btn__content">&lt;span class="link-btn__label">View Slides&lt;/span>&lt;/span>
+&lt;/a>
+&lt;/p></description></item></channel></rss>
